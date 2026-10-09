@@ -1,0 +1,363 @@
+/* General styles */
+
+body {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url('../images/fortuneswell.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-size: large;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+    font-size: large;
+}
+
+.main-content {
+    background-color: #FFFDD0;
+    padding: 20px;
+    color: olivedrab;
+    font-weight: 600;
+}
+
+.image-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.align-bottom {
+    align-self: flex-end;
+}
+
+.image-caption {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+img.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-md-6 > .align-bottom {
+    margin-top: auto;
+}
+
+.subject-heading {
+    font-size: xxx-large;
+    font-family: 'Anton', "Lucida Console";
+    font-weight: 900;
+    color: rgb(33, 208, 30);
+    text-shadow: 2px 2px black;
+}
+
+.blurb {
+    font-size: x-large;
+    font-family: 'Anton', "Lucida Console";
+    font-weight: 400;
+    background-image: url('../images/portland_stone_natural.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    padding: 20px;
+}
+
+.reasons {
+    font-family: 'Anton', "Lucida Console";
+    font-size: xx-large;
+    color: rgb(238, 246, 8);
+    text-shadow: 2px 2px orange;
+    text-align: center;
+}
+
+.half-width-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .half-width-image {
+        width: 50%;
+    }
+}
+
+.history-images {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.history-caption {
+    color: black;
+    font-weight: 300;
+    font-size: x-large;
+    background-color: gold;
+}
+
+/* Current weather */
+
+.weather {
+    font-size: xx-large;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    margin-right: 25px;
+    float: right;
+}
+
+.row.no-gutters a img {
+    width: 100%;
+    height: auto;
+}
+
+.row.no-gutters {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.row.no-gutters a {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.row.no-gutters a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Carousel styles */
+
+.carousel-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .carousel-container {
+        width: 75% !important;
+    }
+
+    .carousel-inner img,
+    .carousel-inner iframe {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100px; 
+        height: 100px; 
+        font-size: 10rem; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        border-radius: 100%; 
+        color: grey; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+
+    .carousel-control-prev {
+        left: 30px; 
+    }
+    .carousel-control-next {
+        right: 30px; 
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 50%; 
+        height: 50%; 
+    }
+
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 1rem;
+        bottom: 20px;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white; 
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    font-family: "Lucida Console";
+    background-color: #FFFDD0;
+    font-size: large;
+    font-weight: 400;
+    font-style: italic;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item img {
+    width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Video styles */
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 500px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .video-container iframe {
+        width: 80%;
+    }
+}
+
+/* Card Flip styles */
+
+.card-flip {
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+}
+
+.card-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-flip:hover .card-flip-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: #212529;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-back {
+    font-family: "Lucida Console";
+    font-weight: 300;
+    transform: rotateY(180deg);
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Container and Row styles */
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.col-lg-4,
+.col-md-6,
+.col-sm-12 {
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
